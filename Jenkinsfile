@@ -3,7 +3,7 @@ node {
    def scannerHome
    stage('SCM CheckOut') {
       //cleanWs disableDeferredWipeout: true, notFailBuild: true
-      git branch: 'develop', url: 'https://github.com/LovesCloud/RIL-Workshop.git'           
+      git branch: 'develop', url: 'https://github.com/LovesCloud/java-devops.git'           
       mvnHome = tool 'M3'
      // def commit = sh(returnStdout: true, script: 'git log -1 --pretty=%B | cat')
       //def matcher = commit =~ ([a-zA-Z][a-zA-Z0-9_]+-[1-9][0-9]*)([^.]|\.[^0-9]|\.$|$)
