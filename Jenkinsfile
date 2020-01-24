@@ -23,7 +23,7 @@ node {
    
    stage('Sonar Code Analysis') {
       withSonarQubeEnv('SonarQube') {
-        sh "${scannerHome}/bin/sonar-scanner -e -Dsonar.projectName=RIL-Workshop -Dsonar.projectKey=RILW -Dsonar.sources=src -Dsonar.java.binaries=target/"
+        sh "${scannerHome}/bin/sonar-scanner -X -e -Dsonar.projectName=RIL-Workshop -Dsonar.projectKey=RILW -Dsonar.sources=src -Dsonar.java.binaries=target/"
       }
    }
  }
